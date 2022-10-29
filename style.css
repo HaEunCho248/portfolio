@@ -1,0 +1,32 @@
+/*global*/
+
+:root {
+    /*color*/
+--color-white:#ffffff;
+--color-mint:#b2ebf2;
+--color-mint-light:#e5ffff;
+--color-mint-dark:#81b9bf;
+--color-black:#0b0b0c;
+--color-gray:#e1e2e1;
+--color-gray-light:#f5f5f6;
+
+     /*font*/
+     --font-large:48px;
+     --font-medium:28px;
+     --font-regular:18px;
+     --font-small:16px;
+     --font-micro:14px;
+
+      /*font-weight*/
+      --weight-bold:700;
+      --weight-semi-bold:600;
+      --weight-regular:400;
+
+       /*size*/
+
+}
+
+/*Universal tags*/
+*{
+    box-sizing: border-box;
+}
