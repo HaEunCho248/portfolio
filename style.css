@@ -25,6 +25,9 @@
        /*size*/
        --size-border-radius:4px;
 
+       /*Annimation */
+       --animation-duration: 300ms;
+
 }
 @font-face {
     font-family: 'GmarketSansMedium';
@@ -44,7 +47,7 @@ body {
 }
 a{
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 ul{
     list-style: none;
@@ -54,7 +57,7 @@ ul{
 h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
-    color: var(--color-mint-dark);
+    color: var(--color-black);
     margin:16px 0px;
 }
 
@@ -85,7 +88,7 @@ p{
     display: flex;
     justify-content: space-between;
     /* background-color: var(--color-mint-dark); */
-    background: #ede7f6;
+    background: #eeeeff;
     align-items: center;
     /* color: var(--color--white); */
     /* color: #FFFFFF; */
@@ -124,7 +127,7 @@ p{
 /*Home*/
 #home{
     /* background: url('imgs/main.png') center/cover no-repeat; */
-    background-color: #ede7f6;
+    background-color: #eeeeff;
     padding: 40px;
     text-align: center;
 
@@ -153,8 +156,84 @@ button{
 .home__contact{
     font-size: var(--font-medium);
     font-weight: var(--weight-regular);
-    color: var(--color-black);
+    color: #6633c1;
     margin:16px 0px;
-    border: 2px solid #272ea2;
+    border: 2px solid #6633c1;
     border-radius: 4px;
+}
+
+/*Section common*/
+.section{
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*About*/
+#about{
+    color: #0b0b0c;
+}
+.about__majors{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+.major__icon{
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 70px;
+    color:#272ea2;
+    border:1px solid #272ea2;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    margin: auto;
+}
+.major__icon i {
+    transition: all var(--animation-duration) ease;
+}
+.major__icon:hover i{
+    color: #7a37ca;
+    transform: rotate(-30deg) scale(1.1);
+}
+.major__title, .major__description{
+    margin-top: 10px;
+    color: var(--color-black);
+}
+
+.major__description {
+    font-size: var(--font-small);
+}
+
+.edu{
+    display: flex;
+    align-items: center;
+}
+
+.edu__description{
+    margin: 0 16px;
+    text-align: center;
+}
+.edu__logo{
+    width: 100px;
+    height: 100px;
+}
+/* .edu__logo .uni{
+    width: 50px;
+    height: 50px;
+}
+.edu__logo .elice{
+    width: 60;
+    height: 30px;
+} */
+.edu__name,
+.edu__period{
+    color: var(--color-black);
+}
+.edu__name {
+    font-size: var(--font-small);
+}
+.edu__period{
+    font-size: var(--font-micro);
 }

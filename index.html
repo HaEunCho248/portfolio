@@ -20,7 +20,7 @@
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
-            <i class="fab fa-diaspora"></i>
+            <!-- <i class="fab fa-diaspora"></i> -->
             <a href="#">HAEUN</a>
         </div>
         <ul class="navbar__menu">
@@ -33,8 +33,13 @@
     </nav>
     <!-- HOME -->
     <section id="home">
-        <img 
+        <!-- <img 
             src="imgs/이력서사진_투명배경.png"
+            alt="HE's profile photo"
+            class="home__avatar"
+        /> -->
+        <img 
+            src="imgs/프로필_일러스트.jpeg"
             alt="HE's profile photo"
             class="home__avatar"
         />
@@ -43,7 +48,7 @@
         <button class="home__contact">Contact Me</button>
     </section>
     <!-- about -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Hic distinctio alias iste magni maiores vitae repellat facere velit labore nostrum tempora, 
@@ -75,22 +80,28 @@
         </div>
         <div class="about__education">
             <div class="edu">
-                <img src="imgs/logo.png" alt="새싹대학교로고" class="edu__logo">
-                <div class="edu__name">새싹대학교</div>
-                <div class="edu__period">2000 - 2021</div>
+                <img src="imgs/logo.png" alt="새싹대학교로고" class="edu__logo uni">
+                <div class="edu__description">
+                    <div class="edu__name">새싹대학교</div>
+                    <div class="edu__period">2000 - 2021</div>
+                </div>
             </div>
+            
             <div class="edu">
-                <img src="imgs/logo.png" alt="새싹대학교로고" class="edu__logo">
-                <div class="edu__name">새싹대학교</div>
-                <div class="edu__period">2000 - 2021</div>
+                <img src="imgs/엘리스로고-removebg-preview.png" alt="새싹대학교로고" class="edu__logo elice">
+                <div class="edu__description">
+                    <div class="edu__name">엘리스 AI트랙 5기</div>
+                    <div class="edu__period">2022.6 - 2022.12</div>
+                </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- skills -->
-    <section id="skills"></section>
+    <section id="skills" class="section"></section>
     <!-- Projects -->
-    <section id="Projects"></section>
+    <section id="Projects" class="section"></section>
     <!-- contact -->
-    <section id="contact"></section>
+    <section id="contact" class="section"></section>
 </body>
 </html>
