@@ -84,10 +84,12 @@ p{
 #navbar {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-mint-dark);
+    /* background-color: var(--color-mint-dark); */
+    background: #ede7f6;
     align-items: center;
     /* color: var(--color--white); */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
+    color: #0b0b0c;
     padding: 16px;
 }
 
@@ -117,4 +119,42 @@ p{
     border-radius: 4px;
     color: #0b0b0c;
 
+}
+
+/*Home*/
+#home{
+    /* background: url('imgs/main.png') center/cover no-repeat; */
+    background-color: #ede7f6;
+    padding: 40px;
+    text-align: center;
+
+}
+
+.home__avatar{
+    width: 250px;
+    height: 280px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    /* background:linear-gradient(to right,#8238cd,#7a37ca,#6633c1,#5032b6,#3830a9,#272ea2); */
+    background-color: #6633c1;
+}
+.home__title,
+.home__description{
+    background:linear-gradient(to right,#8238cd,#7a37ca,#6633c1,#5032b6,#3830a9,#272ea2);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.home__contact{
+    font-size: var(--font-medium);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin:16px 0px;
+    border: 2px solid #272ea2;
+    border-radius: 4px;
 }
